@@ -1,0 +1,15 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Projektowanie obiektowe</title>
+</head>
+
+<body>
+    <nav>
+        <a href="categories">Kategorie</a> |
+        <a href="products">Produkty</a> |
+        <a href="customers">Klienci</a>
+    </nav>
+    <h1>Aplikacja w Vapor na Projektowanie Obiektowe</h1>
+</body>
+</html>

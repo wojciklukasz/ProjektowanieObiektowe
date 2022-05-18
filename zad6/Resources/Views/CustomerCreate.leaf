@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nowy klient</title>
+    </head>
+    <body>
+        <form method="POST" action="/customers">
+            <div>
+                  Email:
+                  <input type="text" name="email" class="form-control">
+                  Imię:
+                  <input type="text" name="first_name" class="form-control">
+                  Nazwisko:
+                  <input type="text" name="last_name" class="form-control">
+                  <span class="input-group-btn">
+                        <input class="btn btn-success" type="submit" value="Dodaj" />
+                  </span>
+            </div>
+            <a href="/customers">Wróć</a>
+        </form>
+    </body>
+</html>

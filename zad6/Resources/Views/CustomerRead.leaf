@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Klienci</title>
+    </head>
+    <body>
+        <nav>
+            <a href="categories">Kategorie</a> |
+            <a href="products">Produkty</a> |
+            <a href="">Klienci</a>
+        </nav><br/><br/>
+        <form method="POST" action="/customers">
+            <div>
+                Klienci:
+                <ul>
+                    #for(customer in customers):
+                        <li>
+                            #(customer.email)
+                            <a href=customers/#(customer.id)>Szegóły</a>
+                            <a href=customers/#(customer.id)/update>Edytuj</a>
+                            <a href=customers/#(customer.id)/delete>Usuń</a>
+                        </li>
+                    #endfor
+                </ul>
+                <a href=customers/create>Dodaj</a>
+            </div>
+        </form>
+    </body>
+</html>

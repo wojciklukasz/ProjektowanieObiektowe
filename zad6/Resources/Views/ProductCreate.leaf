@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nowy produkt</title>
+    </head>
+    <body>
+        <form method="POST" action="/products">
+            <div>
+                  Nazwa:
+                  <input type="text" name="name" class="form-control">
+                  Cena:
+                  <input type="text" name="price" class="form-control">
+                  Ilość:
+                  <input type="text" name="stock" class="form-control">
+                  Kategoria:
+                  <datalist id="category_id">
+                  #for(category in categories):
+                        <option value=#(category.id)>
+                  #endfor
+                  <span class="input-group-btn">
+                        <input class="btn btn-success" type="submit" value="Dodaj" />
+                  </span>
+            </div>
+            <a href="/customers">Wróć</a>
+        </form>
+    </body>
+</html>

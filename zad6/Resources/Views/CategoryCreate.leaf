@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nowa kategoria</title>
+    </head>
+    <body>
+        <form method="POST" action="/categories">
+            <div>
+                  Nazwa:
+                  <input type="text" name="name" class="form-control">
+                  Opis:
+                  <input type="text" name="description" class="form-control">
+                  <span class="input-group-btn">
+                        <input class="btn btn-success" type="submit" value="Dodaj" />
+                  </span>
+            </div>
+            <a href="/categories">Wróć</a>
+        </form>
+    </body>
+</html>

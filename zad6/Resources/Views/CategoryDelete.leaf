@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Usunięto</title>
+    </head>
+    <body>
+        <nav>
+            <a href="categories">Kategorie</a> |
+            <a href="products">Produkty</a> |
+            <a href="customers">Klienci</a>
+        </nav><br/><br/>
+        Usunięto pomyślnie.<br/>
+
+        <a href=/categories>Wróć</a>
+    </body>
+</html>

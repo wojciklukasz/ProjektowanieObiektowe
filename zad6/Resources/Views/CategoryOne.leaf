@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>#(category.name)</title>
+    </head>
+    <body>
+        <nav>
+            <a href="categories">Kategorie</a> |
+            <a href="products">Produkty</a> |
+            <a href="customers">Klienci</a>
+        </nav><br/><br/>
+        <form method="POST" action="/users">
+            <div>
+                ID: #(category.id)<br/>
+                Nazwa: #(category.name)<br/>
+                Opis: #(category.description)<br/><br/>
+                <a href=/categories>Wróć</a>
+                <a href=/categories/#(category.id)/update>Edytuj</a>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kategorie</title>
+    </head>
+    <body>
+        <nav>
+            <a href="">Kategorie</a> |
+            <a href="products">Produkty</a> |
+            <a href="customers">Klienci</a>
+        </nav><br/><br/>
+        <form method="POST" action="/categories">
+            <div>
+                Kategorie:
+                <ul>
+                    #for(category in categories):
+                        <li>
+                            #(category.name)
+                            <a href=categories/#(category.id)>Szegóły</a>
+                            <a href=categories/#(category.id)/update>Edytuj</a>
+                            <a href=categories/#(category.id)/delete>Usuń</a>
+                        </li>
+                    #endfor
+                </ul>
+                <a href=categories/create>Dodaj</a>
+            </div>
+        </form>
+    </body>
+</html>

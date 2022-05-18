@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>#(product.name)</title>
+    </head>
+    <body>
+        <nav>
+            <a href="categories">Kategorie</a> |
+            <a href="products">Produkty</a> |
+            <a href="customers">Klienci</a>
+        </nav><br/><br/>
+        <form method="POST" action="/products">
+            <div>
+                ID: #(product.id)<br/>
+                Nazwa: #(product.name)<br/>
+                Cena: #(product.price)<br/>
+                Ilość: #(product.stock)<br/>
+                Kategoria: #(product.category.name)<br/><br/>
+                <a href=/products>Wróć</a>
+                <a href=/products/#(customer.id)/update>Edytuj</a>
+            </div>
+        </form>
+    </body>
+</html>
